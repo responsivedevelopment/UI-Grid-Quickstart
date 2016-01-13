@@ -8,6 +8,7 @@ I cleaned it up a bit, added some functionality, some code comments and made it 
 To install this app:
 
 Run this command in terminal (osx / linux) or command prompt (windows): 
+
 git clone https://github.com/responsivedevelopment/UI-Grid-Quickstart
 
 To run this application:
