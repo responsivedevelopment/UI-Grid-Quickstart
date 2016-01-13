@@ -5,7 +5,18 @@ The base code was taken from: http://ui-grid.info/docs/#/tutorial/314_external_p
 
 I cleaned it up a bit, added some functionality, some code comments and made it easier to use. 
 
+To install this app:
+
+Run this command in terminal (osx / linux) or command prompt (windows): 
+git clone https://github.com/responsivedevelopment/UI-Grid-Quickstart
+
 To run this application:
+
+Option 1:
+
+Use any web server you like such as apache, IIS, or anything and simply host the folder and browse to the index.html!
+
+Option 2:
 
 1. Install node.JS https://nodejs.org/en/download/ 
 
