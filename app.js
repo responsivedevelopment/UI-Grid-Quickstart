@@ -38,15 +38,15 @@ app.controller('gridCtrl', [
 
   var getPage = function() {
     var url;
-	// This is where our data is located, so for example you could have it at http://jsonplaceholder.typicode.com/posts
+	// This is where our data is located, so for example you could have it at: http://localhost:9090/api/data
         url = 'data.json';
 
     $http.get(url)
-    .success(function (data) {
+    .success(function (response) {
 		// Edited this to set the total number of pages to the length of the data coming back
-      $scope.gridOptions.totalItems = data.length;
+      $scope.gridOptions.totalItems = response.data.length;
       var firstRow = (paginationOptions.pageNumber - 1) * paginationOptions.pageSize;
-      $scope.gridOptions.data = data.slice(firstRow, firstRow + paginationOptions.pageSize);
+      $scope.gridOptions.data = response.data.slice(firstRow, firstRow + paginationOptions.pageSize);
     });
   };
 
